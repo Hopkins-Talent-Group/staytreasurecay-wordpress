@@ -1,0 +1,407 @@
+<?php
+$siteName = "Stay Treasure Cay";
+
+$bookings = [
+    'airbnb1' => 'https://www.airbnb.com/l/CFESfGc5',
+    'airbnb2' => 'https://www.airbnb.com/l/JUKl0VPx',
+    'vrbo'    => 'https://www.vrbo.com/2767178?dateless=true'
+];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><?= htmlspecialchars($siteName) ?> | Treasure Cay, Bahamas</title>
+<meta name="description" content="Stay in beautiful Treasure Cay, Abaco, Bahamas. Discover comfortable island accommodations, turquoise waters, white-sand beaches and unforgettable Caribbean experiences.">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+<header class="site-header" id="site-header">
+    <div class="nav-wrap">
+        <a href="/" class="brand">
+            <span>STAY</span>
+            <strong>TREASURE CAY</strong>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#stays">Stays</a>
+            <a href="#experience">Experience</a>
+            <a href="#destination">Destination</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#booking" class="nav-book">Book Your Stay</a>
+
+        <button class="menu-toggle" aria-label="Open menu">
+            <i></i><i></i><i></i>
+        </button>
+    </div>
+
+    <div class="mobile-menu">
+        <a href="#stays">Stays</a>
+        <a href="#experience">Experience</a>
+        <a href="#destination">Destination</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="mobile-book">Book Your Stay</a>
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="/assets/media/Little-Shack-Of-Treasure.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-inner">
+        <p class="eyebrow hero-eyebrow">TREASURE CAY · ABACO · BAHAMAS</p>
+
+        <h1>Your little piece<br>of paradise.</h1>
+
+        <p class="hero-text">
+            Escape to turquoise water, soft white sand and
+            unforgettable island days in Treasure Cay.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#stays" class="btn btn-light">Explore Our Stays</a>
+            <a href="#booking" class="btn btn-outline">Book Your Stay</a>
+        </div>
+    </div>
+
+    <div class="hero-bottom">
+        <span>SCROLL TO EXPLORE</span>
+        <span class="scroll-line"></span>
+    </div>
+</section>
+
+
+<!-- INTRO -->
+<section class="intro section">
+    <div class="container intro-grid">
+
+        <div>
+            <p class="eyebrow">WELCOME TO TREASURE CAY</p>
+            <h2>Come for the beaches.<br>Stay for the feeling.</h2>
+        </div>
+
+        <div class="intro-copy">
+            <p class="lead">
+                There are places you visit, and places you remember.
+                Treasure Cay is the latter.
+            </p>
+
+            <p>
+                Located in the beautiful Abacos of The Bahamas,
+                Treasure Cay is a peaceful Caribbean escape surrounded
+                by brilliant turquoise water, powder-soft sand and
+                an easygoing island spirit.
+            </p>
+
+            <p>
+                Stay Treasure Cay gives you a comfortable place to
+                call home while you experience everything that makes
+                this corner of The Bahamas special.
+            </p>
+
+            <a href="#destination" class="text-link">Discover the island →</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- IMAGE -->
+<section class="wide-image">
+    <img src="/assets/media/photo-1544551763-46a013bb70d5.avif"
+         alt="Turquoise Caribbean water in Treasure Cay">
+</section>
+
+
+<!-- STAYS -->
+<section class="stays section" id="stays">
+    <div class="container">
+
+        <div class="section-top">
+            <div>
+                <p class="eyebrow">WHERE YOU'LL STAY</p>
+                <h2>A place to<br>call your own.</h2>
+            </div>
+
+            <p>
+                Comfortable island accommodations designed for
+                relaxing, reconnecting and enjoying Treasure Cay
+                at your own pace.
+            </p>
+        </div>
+
+        <div class="stay-grid">
+
+            <article class="stay-card">
+                <div class="stay-photo">
+                    <img src="/assets/media/8bccff38-4f91-4574-83a7-712789b68332.jpeg"
+                         alt="Little Shack of Treasure">
+                    <span>FEATURED STAY</span>
+                </div>
+
+                <div class="stay-content">
+                    <p class="small-label">TREASURE CAY · ABACO</p>
+                    <h3>Little Shack of Treasure</h3>
+
+                    <p>
+                        Your cozy island retreat, made for easy mornings,
+                        beach days and evenings beneath the Caribbean sky.
+                    </p>
+
+                    <div class="card-links">
+                        <a href="<?= $bookings['airbnb1'] ?>"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Book on Airbnb <b>↗</b>
+                        </a>
+
+                        <a href="<?= $bookings['vrbo'] ?>"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Book on Vrbo <b>↗</b>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="stay-card">
+                <div class="stay-photo">
+                    <img src="/assets/media/bad84c34-9e5e-458c-bd7f-9e5373528f55.avif"
+                         alt="Treasure Cay island accommodation">
+                    <span>ISLAND GETAWAY</span>
+                </div>
+
+                <div class="stay-content">
+                    <p class="small-label">TREASURE CAY · BAHAMAS</p>
+                    <h3>Your Island Escape</h3>
+
+                    <p>
+                        Wake up to sunshine, tropical breezes and
+                        the beauty of the Bahamas right outside your door.
+                    </p>
+
+                    <div class="card-links">
+                        <a href="<?= $bookings['airbnb2'] ?>"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Book on Airbnb <b>↗</b>
+                        </a>
+
+                        <a href="<?= $bookings['vrbo'] ?>"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Book on Vrbo <b>↗</b>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+    <video autoplay muted loop playsinline>
+        <source src="/assets/media/Sunday-Morning.mp4" type="video/mp4">
+    </video>
+
+    <div class="experience-overlay"></div>
+
+    <div class="experience-content">
+        <p class="eyebrow">ISLAND LIFE</p>
+        <h2>This is what<br>Sunday morning<br>looks like here.</h2>
+    </div>
+</section>
+
+
+<!-- EXPERIENCE CARDS -->
+<section class="section experiences">
+    <div class="container">
+
+        <div class="section-top">
+            <div>
+                <p class="eyebrow">THE TREASURE CAY EXPERIENCE</p>
+                <h2>Make the island<br>your itinerary.</h2>
+            </div>
+
+            <p>
+                Some days are for exploring. Some are for doing absolutely
+                nothing. In Treasure Cay, both are the right choice.
+            </p>
+        </div>
+
+        <div class="experience-grid">
+
+            <div class="experience-card">
+                <img src="/assets/media/95566d9e-fc61-4eb4-9433-89f25072944e.webp"
+                     alt="Treasure Cay">
+                <div>
+                    <span>01</span>
+                    <h3>Turquoise Waters</h3>
+                    <p>Spend your days surrounded by some of the clearest water in the Caribbean.</p>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <img src="/assets/media/91f1a82e-639c-4182-abae-1328f869429f.avif"
+                     alt="Treasure Cay beach">
+                <div>
+                    <span>02</span>
+                    <h3>Slow Beach Days</h3>
+                    <p>White sand, warm sunshine and nowhere you need to be.</p>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <img src="/assets/media/3e43344f-ef3a-4cc1-b292-fbe6b8e8990d.avif"
+                     alt="Island life in Treasure Cay">
+                <div>
+                    <span>03</span>
+                    <h3>Island Living</h3>
+                    <p>Discover the relaxed pace and natural beauty of the Abacos.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- DESTINATION -->
+<section class="destination section" id="destination">
+    <div class="container destination-grid">
+
+        <div class="destination-image">
+            <img src="/assets/media/aea55c9b-90e7-4380-b155-318a8d43c495.avif"
+                 alt="Treasure Cay Bahamas">
+        </div>
+
+        <div class="destination-copy">
+            <p class="eyebrow">THE DESTINATION</p>
+            <h2>Welcome to<br>Treasure Cay.</h2>
+
+            <p class="lead">
+                A little corner of The Bahamas where the days feel longer,
+                the water looks brighter and life moves a little slower.
+            </p>
+
+            <p>
+                Whether you're planning a romantic escape, a family
+                vacation or simply need a few days away from everything,
+                Treasure Cay makes it easy to disconnect and enjoy the moment.
+            </p>
+
+            <a href="#booking" class="text-link">Plan your escape →</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+    <div class="container booking-inner">
+
+        <p class="eyebrow">READY TO ESCAPE?</p>
+
+        <h2>Stay a little longer.<br>Dream a little bigger.</h2>
+
+        <p>
+            Choose your preferred booking platform and start planning
+            your Treasure Cay getaway.
+        </p>
+
+        <div class="booking-buttons">
+
+            <a href="<?= $bookings['airbnb1'] ?>"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="booking-button">
+                <span>Book on Airbnb</span>
+                <b>↗</b>
+            </a>
+
+            <a href="<?= $bookings['vrbo'] ?>"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="booking-button">
+                <span>Book on Vrbo</span>
+                <b>↗</b>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+    <div class="container contact-inner">
+
+        <div>
+            <p class="eyebrow">QUESTIONS?</p>
+            <h2>Let's get you<br>to the island.</h2>
+        </div>
+
+        <div>
+            <p>
+                Have questions about a stay or planning your trip?
+                Reach out and we'll help point you in the right direction.
+            </p>
+
+            <a href="mailto:stay@staytreasurecay.com" class="text-link">
+                stay@staytreasurecay.com →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+<footer>
+    <div class="container footer-main">
+
+        <div>
+            <a href="/" class="brand footer-brand">
+                <span>STAY</span>
+                <strong>TREASURE CAY</strong>
+            </a>
+
+            <p>Your little piece of paradise in Treasure Cay, Bahamas.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#stays">Stays</a>
+            <a href="#experience">Experience</a>
+            <a href="#destination">Destination</a>
+            <a href="#booking">Book Your Stay</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            © <?= date('Y') ?> Stay Treasure Cay · All Rights Reserved
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

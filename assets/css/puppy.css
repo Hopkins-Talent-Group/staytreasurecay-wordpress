@@ -1,0 +1,148 @@
+section.puppy-offer {
+    display: block !important;
+    width: 100% !important;
+    padding: 90px 24px !important;
+    margin: 0 !important;
+    background: #f3eee5 !important;
+    box-sizing: border-box !important;
+}
+
+section.puppy-offer .puppy-offer-inner {
+    width: 100% !important;
+    max-width: 1180px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 70px !important;
+    box-sizing: border-box !important;
+}
+
+section.puppy-offer .puppy-offer-content {
+    display: block !important;
+    width: auto !important;
+    max-width: 650px !important;
+    flex: 1 1 auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+section.puppy-offer .eyebrow {
+    display: block !important;
+    margin: 0 0 18px !important;
+    color: #087f87 !important;
+    font-family: "DM Sans", Arial, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px !important;
+    line-height: 1.2 !important;
+    text-transform: uppercase !important;
+}
+
+section.puppy-offer h2 {
+    display: block !important;
+    margin: 0 0 28px !important;
+    padding: 0 !important;
+    color: #123e44 !important;
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-size: 68px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    letter-spacing: -2px !important;
+}
+
+section.puppy-offer p:not(.eyebrow) {
+    display: block !important;
+    max-width: 580px !important;
+    margin: 0 0 30px !important;
+    padding: 0 !important;
+    color: #536769 !important;
+    font-family: "DM Sans", Arial, sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 1.7 !important;
+}
+
+section.puppy-offer p strong {
+    color: #123e44 !important;
+    font-weight: 700 !important;
+}
+
+section.puppy-offer a.puppy-offer-button {
+    display: inline-flex !important;
+    width: auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 16px 25px !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #123e44 !important;
+    color: #ffffff !important;
+    font-family: "DM Sans", Arial, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    letter-spacing: .05em !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+}
+
+section.puppy-offer a.puppy-offer-button:hover {
+    background: #082b30 !important;
+    color: #ffffff !important;
+}
+
+section.puppy-offer .puppy-offer-art {
+    display: flex !important;
+    width: 280px !important;
+    height: 280px !important;
+    min-width: 280px !important;
+    flex: 0 0 280px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    background: #e4d7c4 !important;
+    box-sizing: border-box !important;
+}
+
+section.puppy-offer .puppy-offer-art span {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 85px !important;
+    line-height: 1 !important;
+}
+
+@media (max-width: 800px) {
+    section.puppy-offer {
+        padding: 70px 20px !important;
+    }
+
+    section.puppy-offer .puppy-offer-inner {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 45px !important;
+    }
+
+    section.puppy-offer h2 {
+        font-size: 48px !important;
+    }
+
+    section.puppy-offer p:not(.eyebrow) {
+        font-size: 16px !important;
+    }
+
+    section.puppy-offer .puppy-offer-art {
+        align-self: center !important;
+    }
+
+    section.puppy-offer a.puppy-offer-button {
+        width: 100% !important;
+    }
+}
