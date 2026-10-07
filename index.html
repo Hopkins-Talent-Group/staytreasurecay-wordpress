@@ -1,3 +1,13 @@
+<!-- ============================================================
+     CHANGED FILE: index.html
+     CHANGES:
+       1. REMOVED: entire puppy-offer section (dog ad)
+       2. ADDED: "Book Direct" button in hero-actions
+       3. ADDED: "Book Direct" button in booking section
+       4. ADDED: "Book Direct" button in mobile menu
+       5. ADDED: "Book Direct" link in footer
+     ============================================================ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,13 +108,14 @@ body.at-top #site-header{
 }
 .hero h1 em,.about h2 em{color:#16c0c9;font-style:italic;font-weight:500}
 .hero-description{max-width:530px;margin:0 0 30px;color:#fff;font-size:16px;line-height:1.55}
-.hero-actions{display:flex;gap:11px}
+.hero-actions{display:flex;gap:11px;flex-wrap:wrap}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;min-height:50px;
   padding:0 24px;font-size:11px;font-weight:800;letter-spacing:1px;
 }
 .btn-primary{background:#0798a8;color:#fff}
 .btn-outline{border:1px solid rgba(255,255,255,.75);color:#fff;background:rgba(0,0,0,.08)}
+.btn-direct{border:1px solid #15c0c9;color:#15c0c9;background:rgba(0,0,0,.08)}
 .hero-highlights{
   position:absolute;z-index:2;left:50%;bottom:30px;transform:translateX(-50%);
   width:min(calc(100% - 80px),var(--max));display:grid;grid-template-columns:repeat(4,1fr);gap:35px;
@@ -147,21 +158,16 @@ body.at-top #site-header{
 .property-location{font-size:9px;color:#078c9a;font-weight:800;letter-spacing:2.5px;margin:0 0 16px}
 .property-content h3{font:500 34px/1.1 "Playfair Display",serif;margin:0 0 20px;color:var(--ink)}
 .property-content>p:not(.property-location){color:#53717a;margin:0 0 25px;max-width:650px}
-.property-buttons{display:flex;gap:9px}
+.property-buttons{display:flex;gap:9px;flex-wrap:wrap}
 .booking-btn,.big-book{
   display:inline-flex;align-items:center;gap:8px;padding:14px 18px;
   color:#fff;font-size:10px;font-weight:800;letter-spacing:.5px
 }
 .airbnb{background:var(--coral)}
 .vrbo{background:var(--blue)}
+.direct{background:#0b4149}
 
-.puppy-offer{background:var(--cream);padding:90px 0}
-.puppy-offer-inner{width:min(calc(100% - 80px),var(--max));margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
-.puppy-offer-content h2{font:500 clamp(52px,5vw,76px)/.91 "Playfair Display",serif;letter-spacing:-2px;margin:0 0 28px}
-.puppy-description{font-size:18px;color:#476773;max-width:670px;margin:0 0 30px}
-.puppy-offer-button{display:inline-flex;background:#0b4149;color:#fff;padding:15px 24px;font-size:11px;font-weight:800;letter-spacing:.6px}
-.puppy-offer-photo img{width:100%;height:390px;object-fit:cover;border-radius:22px}
-.puppy-photo-caption{text-align:center;font:italic 25px/1.2 "Playfair Display",serif;margin-top:18px;color:#164c55}
+/* puppy-offer section REMOVED */
 
 .island-video{height:390px;position:relative;overflow:hidden}
 .island-video>img{width:100%;height:100%;object-fit:cover}
@@ -194,7 +200,7 @@ body.at-top #site-header{
 .booking .eyebrow{margin:0 0 8px}
 .booking h2{color:#fff;font-size:50px}
 .booking p:not(.eyebrow){color:#b8d1d1;margin:8px 0 0;font-size:13px}
-.booking-buttons{display:flex;gap:9px;flex-shrink:0}
+.booking-buttons{display:flex;gap:9px;flex-shrink:0;flex-wrap:wrap}
 
 .contact{background:#eaf3f1;text-align:center;padding:105px 0 100px}
 .contact .eyebrow{margin-bottom:20px}
@@ -210,7 +216,7 @@ footer{background:#043b42;color:#fff}
 .footer-bottom{width:min(calc(100% - 80px),var(--max));margin:auto;padding:14px 0 16px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;color:#769497;font-size:8px}
 
 @media(max-width:900px){
-  .header-inner,.hero-content,.section-container,.hero-highlights,.puppy-offer-inner,.footer-main,.footer-bottom{width:calc(100% - 40px)}
+  .header-inner,.hero-content,.section-container,.hero-highlights,.footer-main,.footer-bottom{width:calc(100% - 40px)}
   .desktop-nav,.header-book{display:none}
   .menu-toggle{display:flex;border:0;background:none;color:#fff;flex-direction:column;gap:5px;padding:10px}
   .menu-toggle span{width:25px;height:2px;background:#fff}
@@ -221,7 +227,7 @@ footer{background:#043b42;color:#fff}
   .hero h1{font-size:clamp(55px,11vw,85px)}
   .hero-highlights{gap:12px}
   .hero-highlights small{display:none}
-  .about-grid,.puppy-offer-inner{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr}
   .about h2{font-size:58px}
   .property-grid{grid-template-columns:1fr}
   .experience-grid{grid-template-columns:repeat(2,1fr)}
@@ -239,8 +245,6 @@ footer{background:#043b42;color:#fff}
   .hero-highlights div{grid-template-columns:25px 1fr}
   .center-heading h2,.experience h2{font-size:48px}
   .property-image{height:300px}
-  .puppy-offer{padding:65px 0}
-  .puppy-offer-photo img{height:300px}
   .experience-grid{grid-template-columns:1fr}
   .experience-image{height:300px}
   .destination-copy{padding:60px 30px}
@@ -292,6 +296,11 @@ footer{background:#043b42;color:#fff}
         <a href="#destination">Destination</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+
+        <!-- ADDED: Book Direct in mobile menu -->
+        <a href="tel:+13212761159" class="mobile-book" style="background:#0b4149;color:#fff;">
+            Book Direct · +1 (321) 276-1159
+        </a>
 
         <a href="#booking" class="mobile-book">
             Book Your Stay
@@ -345,6 +354,11 @@ footer{background:#043b42;color:#fff}
 
                 <a href="#booking" class="btn btn-outline">
                     Book Your Stay
+                </a>
+
+                <!-- ADDED: Book Direct button in hero -->
+                <a href="tel:+13212761159" class="btn btn-direct">
+                    Book Direct · +1 (321) 276-1159
                 </a>
 
             </div>
@@ -496,6 +510,13 @@ footer{background:#043b42;color:#fff}
                             Book on Airbnb
                         </a>
 
+                        <!-- ADDED: Book Direct button for property 1 -->
+                        <a href="tel:+13212761159"
+                           class="booking-btn direct">
+                            <span>☎</span>
+                            Book Direct
+                        </a>
+
                     </div>
 
                     </div>
@@ -552,6 +573,13 @@ footer{background:#043b42;color:#fff}
                             Book on Vrbo
                         </a>
 
+                        <!-- ADDED: Book Direct button for property 2 -->
+                        <a href="tel:+13212761159"
+                           class="booking-btn direct">
+                            <span>☎</span>
+                            Book Direct
+                        </a>
+
                     </div>
 
                     </div>
@@ -565,84 +593,36 @@ footer{background:#043b42;color:#fff}
     </section>
 
 
-    <!-- PUPPY OFFER -->
+    <!-- ================================================= -->
+    <!-- PUPPY OFFER SECTION — REMOVED COMPLETELY          -->
+    <!-- ================================================= -->
 
-<section class="puppy-offer">
-    <div class="puppy-offer-inner">
 
-        <div class="puppy-offer-content">
+    <!-- ISLAND LIFE -->
 
-            <p class="puppy-eyebrow">A LITTLE SOMETHING EXTRA 🐾</p>
+    <section class="island-video">
+
+        <img
+            src="/assets/media/95566d9e-fc61-4eb4-9433-89f25072944e.webp"
+            alt="Treasure Cay Bahamas"
+        >
+
+        <div class="island-video-overlay">
+
+            <p>ISLAND LIFE</p>
 
             <h2>
-                Stay a Week.<br>
-                Take Home a<br>
-                New Best Friend.
+                This is what<br>
+                Sunday morning<br>
+                looks like here.
             </h2>
 
-            <p class="puppy-description">
-                Staying in Treasure Cay for 7 nights or more?
-                Combine your island getaway with a new family member
-                and receive <strong>$500 off a puppy.</strong>
-            </p>
-
-            <a
-                href="https://championbullies.com/#contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="puppy-offer-button"
-            >
-                Explore the Puppy Offer <span>↗</span>
-            </a>
-
         </div>
 
-        <div class="puppy-offer-photo">
-            <img
-                src="/assets/media/puppy-offer.jpg"
-                alt="Bulldog puppy available through the puppy offer"
-            >
-            <div class="puppy-photo-caption">
-                Your future island companion?
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- ISLAND LIFE -->
+    </section>
 
 
-
-
-
-<section class="island-video">
-
-    <img
-        src="/assets/media/95566d9e-fc61-4eb4-9433-89f25072944e.webp"
-        alt="Treasure Cay Bahamas"
-    >
-
-    <div class="island-video-overlay">
-
-        <p>ISLAND LIFE</p>
-
-        <h2>
-            This is what<br>
-            Sunday morning<br>
-            looks like here.
-        </h2>
-
-    </div>
-
-</section>
-
-
-<!-- EXPERIENCE -->
-
-
-
-
+    <!-- EXPERIENCE -->
 
     <section class="experience section" id="experience">
 
@@ -837,6 +817,13 @@ footer{background:#043b42;color:#fff}
                     Book on Vrbo
                 </a>
 
+                <!-- ADDED: Book Direct button in booking section -->
+                <a href="tel:+13212761159"
+                   class="big-book direct">
+                    <span>☎</span>
+                    Book Direct · +1 (321) 276-1159
+                </a>
+
             </div>
 
         </div>
@@ -924,6 +911,11 @@ footer{background:#043b42;color:#fff}
                target="_blank"
                rel="noopener noreferrer">
                 Vrbo
+            </a>
+
+            <!-- ADDED: Book Direct link in footer -->
+            <a href="tel:+13212761159">
+                Book Direct · +1 (321) 276-1159
             </a>
 
         </div>
